@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascrip: Working with Time</title>
+    <title>JavaScript: Working with Time</title>
     <link rel="stylesheet" type="text/css" href="css/mobileFirst.css" />
     <link rel="stylesheet" type="text/css" href="css/clock.css" />
     <link
@@ -12,6 +12,7 @@
       media="only screen and (min-width:601px)"
       href="css/desktop.css"
     />
+    <script src="js/clock.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -31,17 +32,20 @@
       </header>
       <div class="main">
         <div class="contentLeft">
-          <h2>Digital</h2>
+          <h2>Digital Clock</h2>
+          <!-- Digital clock div -->
           <div id="digitalClock"></div>
         </div>
         <div class="contentLeft">
-          <h2>Analogue</h2>
-          <div>
-<!-- Analogue clock here -->
+          <h2>Analogue Clock</h2>
+          <div id="clockFace">
+            <div id="secondHand"></div>
+            <div id="minHand"></div>
+            <div id="hrHand"></div>
+            <div id="pin"></div>
           </div>
         </div>
       </div>
-
       <footer>&copy; 2023 mustbebuilt</footer>
     </div>
   </body>
